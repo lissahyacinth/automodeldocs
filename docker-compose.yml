@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: ankane/pgvector:v0.5.0
+    environment:
+      POSTGRES_USER: local_user
+      POSTGRES_PASSWORD: "V)!3E3XbB)_uNg+u"
+      POSTGRES_DB: vectors
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

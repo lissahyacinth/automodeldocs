@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "automodeldocs"
+version = "0.1.0"
+description = ""
+authors = ["Lissa Hyacinth <lissahyacinth@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tiktoken = "^0.5.1"
+openai = "^0.28"
+requests = "^2.31.0"
+tenacity = "^8.2.2"
+python-dotenv = "^1.0.0"
+termcolor = "^2.3.0"
+pgvector = "^0.2.1"
+SQLAlchemy = "^2.0.20"
+numpy = "^1.25.2"
+cachetools = "^5.3.1"
+scikit-learn = "^1.3.0"
+tabpfn = "^0.1.9"
+asyncache = "*"
+psycopg = {version = "^3.1.10", extras=["binary"]}
+function_discovery = {path = "../FunctionDiscovery"}
+tracked_cache = {path = "../tracked_cache"}
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
